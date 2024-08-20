@@ -35,7 +35,6 @@
 
     document.getElementById('regularProfile').click()
 
-
 /*Ingreso datos formulario*/
     //declarar clases para Usuario y UsuarioVip
     class User{
@@ -46,10 +45,16 @@
         }
 
         bienvenida(){
-            alert(`Bienvenido: ${this.name}
-    Correo: ${this.email} 
-    Contraseña: ${this.password} 
-    Usuario: ${this.name}`)
+            document.getElementById('myModal').style.display = 'block'
+            document.getElementById('myModal').innerHTML = `<div class="modal__content">
+            <h4 class="modal__title">Bienvenido ${this.name}</h4>
+
+            <p class="modal__text">Email: ${this.email} Contraseña:${this.password}</p>
+            
+            <button class="modal__btn" onclick="closeModal()">Cerrar</button>
+        </div>`
+
+
         }
 
     }
@@ -71,7 +76,7 @@
         let password = document.getElementById('passwordR').value
 
         let regularUser = new User(correo, password)
-        regularUser.bienvenida() 
+        regularUser.bienvenida()
     })
 
     let vipSignup = document.getElementById('vip')
@@ -86,3 +91,9 @@
         let vipUser = new VipUser(correo, password, name)
         vipUser.bienvenida()  
     })
+
+/*Cerrar modal*/
+    function closeModal(){
+        document.getElementById('myModal').style.display = 'none'
+    }
+
