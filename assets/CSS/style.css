@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:"Moderustic", sans-serif;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    background-image: url(../IMG/concierto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10%;
+}
+
+main{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    border-bottom: 2px solid gray;
+}
+
+.tab__menu{
+    display: flex;
+    column-gap: 20px;
+    font-size: 1.8rem;
+    list-style: none;
+}
+.tab__link{
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: black;
+}
+.active0{
+    color: white;
+    border-bottom: 2px solid rgb(37, 149, 214);
+}
+.active1{
+    color: white;
+    font-weight: 500;
+    border-bottom: 2px solid yellow;
+}
+
+.tabContent{
+    display: none;
+    grid-template-rows: max-content max-content;
+}
+#regularContent{
+    display: grid;
+}
+.text{
+    color: white;
+    padding: 13px 0;
+}
+
+.form{
+    display: grid;
+    grid-template-rows:auto auto auto auto;
+    row-gap: 10px;
+}
+
+.form__item{
+    display: flex;
+    flex-direction: column;
+    color: rgb(194, 194, 194);
+}
+.form__item label{
+    font-size: 0.7rem;
+    margin-bottom: 0.125rem;
+}
+.form__item input{
+    background-color: rgba(155, 152, 152, 0.322);
+    padding: 1rem;
+    border-style: none;
+    border-radius: 25px;
+}
+
+::placeholder{
+    color: rgb(194, 194, 194);
+}
+
+.form__checkBox{
+    color: white;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: none;
+}
+.btn-regular{
+    background-color: rgb(37, 149, 214);
+    color: white;
+}
+.btn-vip{
+    background-color: yellow;
+}

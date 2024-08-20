@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Conciertos+" Sign-Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+
+    
+    <main>
+
+    <!-- Tab links -->
+        <ul class="tab__menu" id="profiles">
+            <li class="tab__item ">
+                <a class="tab__link" id="regularProfile" href="#">SIGN UP</a>
+            </li>
+            <li class="tab__item">
+                <a class="tab__link" id="vipProfile" href="#">VIP</a>
+            </li>
+        </ul>
+
+    <!-- Tab content -->
+        
+        <!-- Regular sign up -->
+
+        <div class="tabContent" id="regularContent">
+
+            <p class="text"> 
+                Complete los siguientes campos para crear su cuenta regular. 
+                Considere que a este tipo de cuenta se le asigna un nombre de usuario.
+            </p>
+
+            <form class="form" id="regular">
+                <div class="form__item">
+                    <label for="email">CORREO</label>
+                    <input type="email" id="emailR" name="email" placeholder="Ingresa tu correo" required>
+                </div>
+                <div class="form__item">
+                    <label for="email">CONTRASEÑA</label>
+                    <input type="password" id="passwordR" name="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <div class="form__checkBox">
+                    <input type="checkbox" id="acceptR" name="accept" required>
+                    <label for="accept">Acepto los términos y condiciones.</label>
+                </div>
+                <button type="submit" class="btn btn-regular" id="btn-regular">SIGN UP</button>
+            </form>
+
+        </div>
+
+        <!-- VIP sign up -->
+
+        <div class="tabContent" id="vipContent">
+
+            <p class="text" > 
+                Complete los siguientes campos para crear su cuenta VIP. 
+                Por ser un usario VIP podrá crear su nombre de usuario personalizado.
+            </p>
+
+            <form class="form" id="vip">
+                <div class="form__item">
+                    <label for="userName">NOMBRE DE USUARIO</label>
+                    <input type="text" id="nameV" name="text" placeholder="Ingrese su nombre de usuario" required>
+                </div>
+                <div class="form__item">
+                    <label for="email">CORREO</label>
+                    <input type="email" id="emailV" name="email" placeholder="Ingrese su correo" required>
+                </div>
+                <div class="form__item">
+                    <label for="email">CONTRASEÑA</label>
+                    <input type="password" id="passwordV" name="password" placeholder="Ingrese su contraseña" required>
+                </div>
+                <div class="form__checkBox">
+                    <input type="checkbox" id="acceptV" name="accept" required>
+                    <label for="accept">Acepto los términos y condiciones.</label>
+                </div>
+                <button type="submit" class="btn btn-vip" id="btn-vip">SIGN UP</button>
+            </form>
+
+        </div>
+
+    </main>
+    
+    <div>
+        <div>
+            <h4>Bienvenido usuario</h4>
+            <hr>
+            
+        </div>
+    </div>
+    <script src="assets/JS/script.js"></script>
+</body>
+</html>
